@@ -24,6 +24,9 @@ Plug 'tpope/vim-fugitive'
 Plug 'mattn/emmet-vim'
 
 Plug 'plasticboy/vim-markdown'
+" let g:vim_markdown_folding_disabled = 1
+" let g:vim_markdown_folding_style_pythonic = 1
+" let g:vim_markdown_override_foldtext = 0
 
 " List ends here. Plugins become visible to Vim after this call.
 " Automatically executes `filetype plugin indent on` and `syntax enable`. You can revert the settings after the call.
