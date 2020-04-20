@@ -1,7 +1,11 @@
 # vimrc-backup
 
+## 简介
+
 vim 配置文件 vimrc 的备份。
 
-## linux_with_plugins
+## 使用方法
 
-Linux 系统下，安装了插件的 vim 配置文件，管理插件的工具为 [vim-plug](https://github.com/junegunn/vim-plug)。
+1. 切换到 `/tmp` 目录
+2. `git clone https://github.com/dngjnh/myvimrc.git`
+3. `bash myvimrc/deploy.sh`
