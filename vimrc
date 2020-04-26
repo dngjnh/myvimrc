@@ -36,6 +36,21 @@ Plug 'plasticboy/vim-markdown'
 Plug 'mattn/emmet-vim'
 
 Plug 'StanAngeloff/php.vim'
+" let g:php_var_selector_is_identifier = 1
+function! PhpSyntaxOverride()
+  " Put snippet overrides in this function.
+  hi! link phpDocTags phpDefine
+  hi! link phpDocParam phpType
+  hi phpUseNamespaceSeparator guifg=#808080 guibg=NONE gui=NONE
+  hi phpClassNamespaceSeparator guifg=#808080 guibg=NONE gui=NONE
+  syn match phpParentOnly "[()]" contained containedin=phpParent
+  hi phpParentOnly guifg=#f08080 guibg=NONE gui=NONE
+endfunction
+
+augroup phpSyntaxOverride
+  autocmd!
+  autocmd FileType php call PhpSyntaxOverride()
+augroup END
 
 Plug 'stephpy/vim-php-cs-fixer'
 " If php-cs-fixer is in $PATH, you don't need to define line below
