@@ -60,14 +60,14 @@ Plug 'stephpy/vim-php-cs-fixer'
 let g:php_cs_fixer_level = "symfony"                   " options: --level (default:symfony)
 let g:php_cs_fixer_config = "default"                  " options: --config
 " If you want to define specific fixers:
-"let g:php_cs_fixer_fixers_list = "linefeed,short_tag" " options: --fixers
-"let g:php_cs_fixer_config_file = '.php_cs'            " options: --config-file
+" let g:php_cs_fixer_fixers_list = "linefeed,short_tag" " options: --fixers
+" let g:php_cs_fixer_config_file = '.php_cs'            " options: --config-file
 " End of php-cs-fixer version 1 config params
 
 " If you use php-cs-fixer version 2.x
 let g:php_cs_fixer_rules = "@PSR2"          " options: --rules (default:@PSR2)
-"let g:php_cs_fixer_cache = ".php_cs.cache" " options: --cache-file
-"let g:php_cs_fixer_config_file = '.php_cs' " options: --config
+" let g:php_cs_fixer_cache = ".php_cs.cache" " options: --cache-file
+" let g:php_cs_fixer_config_file = '.php_cs' " options: --config
 " End of php-cs-fixer version 2 config params
 
 let g:php_cs_fixer_php_path = "php"               " Path to PHP
@@ -103,3 +103,5 @@ set smarttab
 set tabstop=4
 
 set showmatch
+
+" set colorcolumn=120
