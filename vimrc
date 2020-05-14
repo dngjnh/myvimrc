@@ -86,6 +86,9 @@ nmap <F8> :TagbarToggle<CR>
 " Automatically executes `filetype plugin indent on` and `syntax enable`. You can revert the settings after the call.
 call plug#end()
 
+" 2072/PHP-Indenting-for-VIm
+let g:PHP_vintage_case_default_indent = 1
+
 set ambiwidth=double
 set encoding=utf-8
 set fileencodings=ucs-bom,utf-8,gb18030,gbk,latin1
