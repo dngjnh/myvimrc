@@ -82,6 +82,8 @@ Plug 'tpope/vim-surround'
 Plug 'majutsushi/tagbar'
 nmap <F8> :TagbarToggle<CR>
 
+Plug 'mkitt/tabline.vim'
+
 " List ends here. Plugins become visible to Vim after this call.
 " Automatically executes `filetype plugin indent on` and `syntax enable`. You can revert the settings after the call.
 call plug#end()
@@ -108,3 +110,5 @@ set tabstop=4
 set showmatch
 
 " set colorcolumn=120
+
+set showtabline=2
