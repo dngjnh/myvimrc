@@ -3,10 +3,8 @@ call plug#begin('~/.vim/plugged')
 
 " Declare the list of plugins.
 Plug 'preservim/nerdtree'
-let g:NERDCommentEmptyLines = 1
-let g:NERDSpaceDelims = 1
-let g:NERDTrimTrailingWhitespace = 1
-let g:NERDDefaultAlign = 'left'
+" autocmd vimenter * NERDTree
+map <C-n> :NERDTreeToggle<CR>
 
 Plug 'vim-syntastic/syntastic'
 set statusline+=%#warningmsg#
@@ -18,6 +16,10 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
 Plug 'preservim/nerdcommenter'
+let g:NERDCommentEmptyLines = 1
+let g:NERDSpaceDelims = 1
+let g:NERDTrimTrailingWhitespace = 1
+let g:NERDDefaultAlign = 'left'
 
 Plug 'tpope/vim-fugitive'
 
