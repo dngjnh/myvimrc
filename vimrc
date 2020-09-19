@@ -1,3 +1,6 @@
+unlet! skip_defaults_vim
+source $VIMRUNTIME/defaults.vim
+
 " Plugins will be downloaded under the specified directory.
 call plug#begin('~/.vim/plugged')
 
