@@ -164,4 +164,6 @@ set showmatch
 
 set showtabline=2
 
+set incsearch
+
 " set colorcolumn=120
