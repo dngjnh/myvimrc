@@ -6,4 +6,4 @@ cd /tmp \
 && cp vim-plug/plug.vim ~/.vim/autoload \
 && cp myvimrc/vimrc ~/.vimrc \
 && vim -c 'PlugInstall' \
-&& rm -rf /vim-plug /myvimrc
+&& rm -rf vim-plug myvimrc
