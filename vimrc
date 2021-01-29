@@ -140,9 +140,14 @@ nmap <F8> :TagbarToggle<CR>
 
 Plug 'mkitt/tabline.vim'
 
+Plug 'bkad/CamelCaseMotion'
+
 " List ends here. Plugins become visible to Vim after this call.
 " Automatically executes `filetype plugin indent on` and `syntax enable`. You can revert the settings after the call.
 call plug#end()
+
+" bkad/CammelCaseMotion
+let g:camelcasemotion_key = '<leader>'
 
 " 2072/PHP-Indenting-for-VIm
 let g:PHP_vintage_case_default_indent = 1
